@@ -383,6 +383,7 @@
                     class="pext-incometimes">-</span><span class="lan-31">{}</span></span></div>
               <div class="col-xs-5 col-sm-5 col-md-5 text-right" style=""><span
                   class="pext-incomecan">--</span><span> ETH</span></div>
+              <!-- Unsettled income -->
               <div class="col-xs-5 col-sm-5 col-md-5 text-left" style=""><span class="lan-32">{}</span></div>
               <div class="col-xs-7 col-sm-7 col-md-7 text-right" style=""><span
                   class="pext-incomeper">--</span><span> ETH&nbsp;<a href="javascript:;"
@@ -789,7 +790,7 @@
       a.push(web3.utils.fromWei(BN(result[9]).toFixed(), "ether"));
       //a.push(BN(result[9]).toFixed());
       a.push(BN(result[10]).toFixed());
-      refreshIncomeTimer(a[0]); $(".pext-incomeper").html(BN(a[1]).toFixed(3, 1) + " ~ " + BN(a[9]).toFixed(3, 1));
+      refreshIncomeTimer(a[0]); $(".pext-incomeper").html(BN(a[1]).toFixed(6, 1) + " ~ " + BN(a[9]).toFixed(6, 1));
       $(".pext-incometimes").html(BN(a[2]).div(10).toFixed(1, 1));
       $(".pext-incomecan").html(BN(a[4]).toFixed(6, 1));
       $(".pext-teamgen").html(BN(a[5]).toFixed(6, 1));
