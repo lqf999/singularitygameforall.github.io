@@ -480,6 +480,7 @@
       </div>
       <div class="cst_textlinkWrap c-div S_cbdiv_f1469b7b" style="margin:10px 10px;">
           <div class="row list-line">
+              <!-- special prize -->
               <div class="col-xs-12 col-sm-12 col-md-12 text-center"><span
                   style="border-bottom:1px solid;color:#ff99ff;" class="lan-54">{}</span></div>
               <div class="rec-o1 col-xs-6 col-sm-6 col-md-6 text-left hidden" style="color:#ffffff"><span>Round&nbsp;<span
@@ -790,7 +791,7 @@
       a.push(web3.utils.fromWei(BN(result[9]).toFixed(), "ether"));
       //a.push(BN(result[9]).toFixed());
       a.push(BN(result[10]).toFixed());
-      refreshIncomeTimer(a[0]); $(".pext-incomeper").html(BN(a[1]).toFixed(6, 1) + " ~ " + BN(a[9]).toFixed(6, 1));
+      refreshIncomeTimer(a[0]); $(".pext-incomeper").html(BN(a[1]).toFixed(4, 1) + " ~ " + BN(a[9]).toFixed(4, 1));
       $(".pext-incometimes").html(BN(a[2]).div(10).toFixed(1, 1));
       $(".pext-incomecan").html(BN(a[4]).toFixed(6, 1));
       $(".pext-teamgen").html(BN(a[5]).toFixed(6, 1));
